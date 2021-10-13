@@ -1,0 +1,32 @@
+// Base
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  video{
+    width: 100%;
+  }
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+main{
+  background-color: #edeff1;
+}
+a {
+  text-decoration: none;
+}
+
+* {
+  outline: none !important;
+}
+.text-center{
+  text-align: center;
+}
+img{
+  max-width: 100%;
+}

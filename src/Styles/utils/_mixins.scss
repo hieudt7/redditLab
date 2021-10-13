@@ -1,0 +1,50 @@
+// Mixins
+
+@mixin clearfix() {
+  &:after {
+    content: '';
+    width: 100%;
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin backgroundAlpha($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: $color;
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+  zoom: 1;
+}
+
+@mixin placeholderColor($color) {
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder { color: $color; }
+  &::-webkit-input-placeholder  { color: $color; }
+}
+
+@mixin placeholder() {
+  &::-moz-placeholder {@content}
+  &:-ms-input-placeholder {@content}
+  &::-webkit-input-placeholder {@content}
+}
+
+@mixin gradientX($colorStart, $colorEnd) {
+  background: $colorStart !important;
+  background: -moz-linear-gradient(left, $colorStart 0%, $colorEnd 100%) !important;
+  background: -webkit-linear-gradient(left, $colorStart 0%, $colorEnd 100%) !important;
+  background: linear-gradient(to right, $colorStart 0%, $colorEnd 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$colorStart, endColorstr=$colorEnd, GradientType=1) !important;
+}
+
+@mixin gradientY($colorStart, $colorEnd) {
+  background: $colorStart !important;
+  background: -moz-linear-gradient(top, $colorStart 0%, $colorEnd 100%) !important;
+  background: -webkit-linear-gradient(top, $colorStart 0%, $colorEnd 100%) !important;
+  background: linear-gradient(to bottom, $colorStart 0%, $colorEnd 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$colorStart, endColorstr=$colorEnd, GradientType=0) !important;
+}

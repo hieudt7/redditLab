@@ -1,0 +1,76 @@
+// Modal
+.ReactModal__Content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin: auto;
+  border-radius: 0!important;
+  width: 60% !important;
+  height: auto !important;
+  background: transparent;
+  border: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+  outline: none;
+  .modal-description {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &.modal-vote {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  .close {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 2rem;
+    right: 0;
+    opacity: 1;
+    font-size: 4rem;
+    outline: none !important;
+    color: #fff !important;
+    font-family: serif;
+    font-weight: 300;
+    z-index: 9;
+    text-indent: -9999px;
+  }
+  h2 {
+    height: 6rem;
+    line-height: 5.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1.2rem;
+    border-radius: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    min-width: 60%;
+    justify-content: center;
+    span {
+      color: #fce54e;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
+    }
+  }
+	p,
+	li {
+    font-size: 2rem;
+  }
+  &.modal-prize--3 {
+    p,
+    li {
+      font-size: 1.6rem !important;
+    }
+  }
+}

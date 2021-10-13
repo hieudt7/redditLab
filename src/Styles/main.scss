@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+// Vendor
+@import 'vendor/bootstrap';
+// Utils
+@import 'utils/mixins';
+@import 'utils/functions';
+@import 'utils/variables';
+
+// Base
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+
+// Components
+@import 'components/modal';
+@import 'components/form';
+@import 'components/buttons';
+@import 'components/animations';
+@import 'components/spinner';
+@import 'components/swal';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Pages
+@import 'pages/home/home';

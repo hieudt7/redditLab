@@ -1,0 +1,44 @@
+// Buttons
+.btn{
+  display: inline-block;
+  padding: 4px 18px;
+  text-align: center;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  font-size: 12px;
+  outline: 0 !important;
+  border: 0 !important;
+  cursor: pointer;
+  &:hover{
+    transform: scale(0.92);
+  }
+  &--round{
+    border-radius: 25px;
+  }
+  &--orange{
+    background-color: #e6afa4;
+    color: #fff;
+    &:hover{
+      color: #fff
+    }
+  }
+  &--black{
+    background-color: #1d2937;
+    color: #fff;
+    &:hover{
+      color: #fff
+    }
+  }
+}
+.link{
+  display: inline-block;
+  color: #000;
+  font-weight: 500;
+  outline: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  &--underline{
+    text-decoration: underline;
+  }
+}
